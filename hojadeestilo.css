@@ -1,0 +1,42 @@
+/*general*/
+*{margin: 10px;padding: 10px;box-sizing: border-box;}
+
+/*padre*/
+.padre{display: flex; flex-flow: column nowrap;}
+
+
+/*header*/
+.header{background-color: black;display: flex; flex-flow: column nowrap;}
+  .menu{height: 100px;background-color: #493843;display: flex; flex-flow: row nowrap;justify-content: flex-end;align-items: center;align-content: space-between;}
+    .nav{background-color:  #664f5e;flex: 4 1 auto;height: 50px;}
+    .social{background-color:  #664f5e;flex: 1 1 auto;height: 50px;}
+  .principal{background-color: #61988E;height: 500px;display:flex; flex-flow: column nowrap;justify-content:flex-start;align-items: center;}  
+    h1{background-color: #def5f1;flex: 1 1 auto;;}
+    .imgperfil{background-color:#def5f1; height: 100px;width: 100px;flex: 2 1 auto;}
+    h2{background-color: #def5f1;flex: 1 1 auto;}
+
+
+/*section*/
+.section{background-color:black;display: flex;height: 700px;}
+  .descripcion{background-color:   #EABDA8;flex: 2 1 auto;display: flex; flex-flow: row wrap;}
+    .herramientas{background-color: #f1d5c7;flex: 1 1 auto;}
+    .herramientas1{background-color: #f1d5c7;flex: 1 1 100%;}
+    .navegacion{background-color: #eea580;flex: 1 1 100%;}
+  .aside{background-color: #A0B2A6;flex: 1 1 auto;display: flex; flex-flow: column nowrap;}
+    .sobremi{background-color:#c4d7ca;flex: 1 1 auto}
+    .formacion{background-color:#c4d7ca;flex: 1 1 auto}
+
+
+/*footer*/
+.footer{background-color: black; display: flex;flex-flow: column nowrap;}
+  .formulario{background-color: #493843;flex: 1 1 auto}
+  .contacto{background-color: #493843;flex: 1 1 auto}
+
+@media all and (max-width:800px){
+  .section{flex-direction:column}
+  .menu{flex-direction: column;}
+   
+}
+@media all and (max-width:600px){
+  .herramientas{flex: 1 1 100%;}
+}
