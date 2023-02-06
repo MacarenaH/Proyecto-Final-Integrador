@@ -7,6 +7,9 @@
   <meta name=”keywords” content=”html5,cdd3,javascript,diseño-web”/>
   <title>Brianna Daniels-Desarrollo web</title>
   <link type="image/png" sizes="16x16" rel="icon" href="imagenes/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="hojadeestilo.css"> 
 </head>
 <body>
@@ -15,37 +18,110 @@
     <header class="header">
        <!--menu-->
       <div class="menu">
-        <div class="nav"></div>
-        <div class="social"></div>
+        <nav class="navegacion">
+          <a href="#aside" class="nav">Sobre mi</a>
+          <a href="#descripcion" class="nav">Servicios</a>
+          <a href="#herramientas1" class="nav">Portfolio</a>
+          <a href="#footer" class="nav">Contacto</a>           
       </div>
        <!--Principal-->
       <div class="principal">
-        <h1></h1>
-        <img class="imgperfil" src="" alt="">
-        <h2></h2>
+        <h1>Brianna Daniels</h1>
+        <img class="imgperfil" src="imagenes/fotocv.png" alt="Foto de Perfil">
+        <h2>Desarrollo Web</h2>
       </div>
     </header>
      <!--section-->
     <section class="section">
        <!--descripcion-->
-      <div class="descripcion">
-        <div class="herramientas"></div>
-        <div class="herramientas"></div>
-        <div class="herramientas1"></div>
-        <nav class="navegacion"></nav>
+      <div id="descripcion">
+        <div class="herramientas">
+          <h2>Herramientas</h2>
+          <p >HTML5</p>
+          <p >CSS</p>
+          <p >Javascript</p>
+          <p >Bootstrap</p>
+          <p >Git</p>
+        </div> 
+        <div class="herramientas">
+        <h2>Aptitudes</h2>
+         <p >Autonomía</p>
+         <p >Responsabilidad</p>
+         <p >Creatividad</p>
+         <p >Proactividad</p>
+         <p >Comunicación</p>
+        </div>
+        <div id="herramientas1">
+        <h2>Portfolio</h2>
+        <div class="proyecto">
+           <h3>Proyecto 1</h3>
+           <figure>
+              <img class="imagenweb" src="imagenes/proyecto1.png" alt="proyecto 1">
+              <figcaption>Imagen obtenida de<a class="vector" href="https://vectorportal.com/es/vector/dise%C3%B1o-del-sitio-web/31124">vector portal</a></figcaption>
+           </figure>
+           <p>Ejemplo de Proyecto 1:Diseño de página web </p>
+        </div>
+        <div class="proyecto">
+           <h3>Proyecto 2</h3>
+           <figure>
+             <img class="imagenweb" src="imagenes/Proyecto2.png" alt="proyecto 2">
+             <figcaption>Imagen obtenida de<a class="vector" href ="https://vectorportal.com/es/vector/dise%C3%B1o-del-sitio-web/31124">vector portal</a></figcaption>
+         </figure>
+           <p>Ejemplo de Proyecto 2:Diseño de página web </p>
+        </div>
+      </div>
+        <nav class="navegacion">
+          <a class="vermas" href="#"> Ver Más --></a>
+        </nav>
       </div>
        <!--aside-->
-      <aside class="aside">
-        <div class="sobremi"></div>
-        <div class="formacion"></div>
+      <aside id="aside">
+        <div class="sobremi">
+          <h2>Sobre mi</h2>
+          <p>Hola! soy Brianna y me dedico al desarrollo web, específicamente desarrollo Front End. Estaré encantada de ayudarte a realizar tu sitio web. Cuento con amplia experiencia en la creación de páginas web comerciales, de entretenimiento, artes, deportes y ciencias. Me gusta trabajar en conjunto con el/la cliente para alcanzar el objetivo. Siempre dispuesta a afrontar nuevos desafíos.</p>
+        </div>
+        <div class="formacion">
+          <h2>Formación</h2>
+          <p>Primeros pasos del desarrollo Front End en:<a class="arg"href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target = "_blank">Argentina Programa</a></p>
+          <p> Curso HTML 5: Capacitando</p>
+          <p> Curso CSS: Capacitando</p>
+          <p> Curso Javascript: Capacitando</p>
+          <p> Curso Bootstrap: Capacitando</p>
+        </div>
       </aside>
     </section>
      <!--footer-->
-    <footer class="footer">
-      <div class="formulario"></div>
-      <div class="contacto"></div>
+    <footer>
+     <div id="footer"> 
+      <!--formulario-->
+        <form class="formulario" action="" method="get">
+          <h2>Escríbeme!</h2>
+          <div class="form">
+             <label>Nombre</label>
+             <input type="text"name="nombre"placeholder="Ingrese su nombre"/>
+          </div>
+          <div class="form">
+             <label>Apellido</label>
+             <input type="text"name="apellido"placeholder="Ingrese su apellido"/>
+          </div>
+          <div class="form">
+             <label>E-mail</label>
+             <input type="E-mail" name="e-mail"placeholder="Ingrese su E-mail"/>
+          </div>
+          <div class="form">
+            <label>Consulta</label>
+            <textarea id="msg" cols="30" rows="10"></textarea>
+          </div>
+          <div class="form">
+            <input class="botonenviar" type="submit" value="enviar">
+          </div>
+        </form>
+        <div class="contacto">
+          <p><em>E-mail: brianna.daniels@example.com</em></p>
+          <p><em>Tel: (289) 549-1162<em></p>  
+        </div>     
+     </div>
     </footer>
   </div>
-  
 </body>
 </html>
