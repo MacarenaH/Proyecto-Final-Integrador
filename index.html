@@ -19,10 +19,11 @@
        <!--menu-->
       <div class="menu">
         <nav class="navegacion">
-          <a href="#aside" class="nav">Sobre mi</a>
-          <a href="#descripcion" class="nav">Servicios</a>
-          <a href="#herramientas1" class="nav">Portfolio</a>
-          <a href="#footer" class="nav">Contacto</a>           
+          <button class="nav-boton" onclick="accion()">Menú</button>
+          <a href="#aside" class="nav desaparece">Sobre mi</a>
+          <a href="#descripcion" class="nav desaparece">Servicios</a>
+          <a href="#herramientas1" class="nav desaparece">Portfolio</a>
+          <a href="#footer" class="nav desaparece">Contacto</a>           
       </div>
        <!--Principal-->
       <div class="principal">
@@ -123,5 +124,11 @@
      </div>
     </footer>
   </div>
+
+ <script>
+  function accion(){console.log('esta funcionando mi boton');var ancla = document.getElementsByClassName ('nav'); 
+for(var i = 0 ; i < ancla.length; i++){ancla[i].classList.toggle ('desaparece');}}
+ </script>
+  
 </body>
 </html>
