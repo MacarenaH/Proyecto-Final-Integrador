@@ -99,36 +99,42 @@
           <h2>Escríbeme!</h2>
           <div class="form">
              <label>Nombre</label>
-             <input type="text"name="nombre"placeholder="Ingrese su nombre"/>
+             <input type="text" class="casilla"name="nombre"placeholder="Ingrese su nombre"/>
           </div>
           <div class="form">
              <label>Apellido</label>
-             <input type="text"name="apellido"placeholder="Ingrese su apellido"/>
+             <input type="text"class="casilla"name="apellido"placeholder="Ingrese su apellido"/>
           </div>
           <div class="form">
              <label>E-mail</label>
-             <input type="E-mail" name="e-mail"placeholder="Ingrese su E-mail"/>
+             <input type="E-mail"class="casilla" name="e-mail"placeholder="Ingrese su E-mail"/>
           </div>
           <div class="form">
             <label>Consulta</label>
-            <textarea id="msg" cols="30" rows="10"></textarea>
+            <textarea id="msg" class="casilla" cols="20" rows="10"></textarea>
           </div>
           <div class="form">
             <input class="botonenviar" type="submit" value="enviar">
           </div>
         </form>
+        <!--Contacto-->
         <div class="contacto">
-          <p><em>E-mail: brianna.daniels@example.com</em></p>
-          <p><em>Tel: (289) 549-1162<em></p>  
+         
+          <p><i class="fa-regular fa-envelope-open"></i><em>E-mail: brianna.daniels@example.com</em></p>
+       
+          <p><i class="fa-brands fa-whatsapp"></i><em>Tel: (289) 549-1162<em></p>  
         </div>     
      </div>
     </footer>
   </div>
 
+<!--Javascript-->
  <script>
   function accion(){console.log('esta funcionando mi boton');var ancla = document.getElementsByClassName ('nav'); 
 for(var i = 0 ; i < ancla.length; i++){ancla[i].classList.toggle ('desaparece');}}
+  alert ("Bienvenido/a al sitio web de Brianna Daniels")
  </script>
-  
+  <script src="https://kit.fontawesome.com/bcc30ccabc.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

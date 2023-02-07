@@ -25,7 +25,7 @@ h2{text-shadow:2px 3px 2px grey;font-size: 40px;letter-spacing: 2px; text-align:
   p{font-size: 25px;}
   h3{font-size: 30px;letter-spacing: 1px}
   figcaption{font-size: 20px;}
-  #descripcion{background-color:   #EABDA8;flex: 2 1 auto;display: flex; flex-flow: row wrap;text-align: center;box-shadow: 2px 2px 4px #e29673}
+  #descripcion{background-color:   #EABDA8;flex: 2 1 auto;display: flex; flex-flow: row wrap;text-align: center;box-shadow: 2px 2px 4px #b47558}
     .herramientas{background-color: #f1d5c7;flex: 1 1 auto;box-shadow: 2px 2px 4px #e29673}
     #herramientas1{background-color: #f1d5c7;flex: 1 1 100%;display: flex;flex-flow: row wrap;justify-content: center;justify-content: center;box-shadow: 2px 2px 4px #e29673}
       #herramientas1 h2{flex: 1 1 100%;}
@@ -45,17 +45,18 @@ h2{text-shadow:2px 3px 2px grey;font-size: 40px;letter-spacing: 2px; text-align:
 
 
 /*footer*/
-#footer{display: flex;flex-flow: column nowrap;justify-content: center;align-items: center;background: linear-gradient(to bottom,#ecded9, #CBBFBB);box-shadow: 2px 2px 2px #9d938f}
-  .formulario{background-color: #cab8b2;display: flex;flex-flow: column wrap;align-items:center;font-size: 30px;letter-spacing: 2px;text-transform: uppercase;box-shadow: 2px 2px 4px #9d938f}
+#footer{display: flex;flex-flow: column nowrap;justify-content: center;align-items: center;background: linear-gradient(to bottom,#ecded9, #CBBFBB);box-shadow: 2px 2px 4px #756a66}
+  .formulario{flex:1 1 auto;background-color: #cab8b2;display: flex;flex-flow: column wrap;align-items:center;font-size: 30px;letter-spacing: 2px;text-transform: uppercase;box-shadow: 2px 2px 4px #9d938f}
     .form{width: 50%;}
-    .botonenviar{padding: 1em 1.5em;font-size:15px;box-shadow: 2px 2px 2px black;text-transform: uppercase;}
-  .contacto{text-align: center;}
-
+    .casilla{border: none;border-bottom:1px solid black;background-color: transparent;border-radius: 0px;}
+    .botonenviar{border-radius: 100px;background-color:rgb(30, 29, 29);color: white;letter-spacing: 2px;padding: 1em 1.5em;font-size:15px;text-transform: uppercase;}
+  .contacto{flex:1 1 auto;text-align: center;}
+    .contacto i {font-size: 30px;margin: 0px;}
 
 
 .nav-boton{background-color:  #664f5e;color: white;letter-spacing: 2px;text-transform: uppercase;box-shadow: 2px 2px 4px black;font-size: 20px;border: 2px solid black;display: none;}
   
-@media all and (max-width:800px){
+@media only screen and (max-width:800px){
   h1{font-size:50px; ;}
   .imgperfil{width: 200px; height: 200px}
   .section{flex-direction:column}
@@ -63,6 +64,7 @@ h2{text-shadow:2px 3px 2px grey;font-size: 40px;letter-spacing: 2px; text-align:
   h2{font-size: 20px;}
   p{font-size: 15px;}
   h3{font-size: 10px;letter-spacing: 1px}
+  .imagenweb{width: 50%;}
   .formulario{font-size: 15px;}
   .botonenviar{font-size: 10px;}
   .navegacion{flex-direction: column;text-align: center;}
@@ -72,6 +74,14 @@ h2{text-shadow:2px 3px 2px grey;font-size: 40px;letter-spacing: 2px; text-align:
   }
 
 
-@media all and (max-width:600px){
+@media only screen and(max-width:600px){
   .herramientas{flex: 1 1 100%;}
+  .formulario{font-size: 10px;}
+  
+
+}
+
+@media screen and(max-width:451px){
+  #footer{background-color: black;}
+  #descripcion{background-color: black;}
 }
