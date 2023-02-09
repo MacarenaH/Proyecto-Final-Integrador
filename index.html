@@ -23,7 +23,8 @@
           <a href="#aside" class="nav desaparece">Sobre mi</a>
           <a href="#descripcion" class="nav desaparece">Servicios</a>
           <a href="#herramientas1" class="nav desaparece">Portfolio</a>
-          <a href="#footer" class="nav desaparece">Contacto</a>           
+          <a href="#footer" class="nav desaparece">Contacto</a>   
+        </nav>        
       </div>
        <!--Principal-->
       <div class="principal">
@@ -38,56 +39,62 @@
       <div id="descripcion">
         <div class="herramientas">
           <h2>Herramientas</h2>
-          <p >HTML5</p>
-          <p >CSS</p>
-          <p >Javascript</p>
-          <p >Bootstrap</p>
-          <p >Git</p>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Bootstrap</li>
+            <li>Git</li>
+        </ul>
         </div> 
         <div class="herramientas">
-        <h2>Aptitudes</h2>
-         <p >Autonomía</p>
-         <p >Responsabilidad</p>
-         <p >Creatividad</p>
-         <p >Proactividad</p>
-         <p >Comunicación</p>
+         <h2>Aptitudes</h2>
+         <ul>
+           <li>Autonomía</li>
+           <li>Responsabilidad</li>
+           <li>Creatividad</li>
+           <li>Proactividad</li>
+           <li>Comunicación</li>
+          </ul>
         </div>
         <div id="herramientas1">
-        <h2>Portfolio</h2>
-        <div class="proyecto">
-           <h3>Proyecto 1</h3>
-           <figure>
+          <h2>Portfolio</h2>
+          <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <figure>
               <img class="imagenweb" src="imagenes/proyecto1.png" alt="proyecto 1">
               <figcaption>Imagen obtenida de<a class="vector" href="https://vectorportal.com/es/vector/dise%C3%B1o-del-sitio-web/31124">vector portal</a></figcaption>
-           </figure>
-           <p>Ejemplo de Proyecto 1:Diseño de página web </p>
+            </figure>
+            <p>Ejemplo de Proyecto 1:Diseño de página web </p>
+          </div>
+          <div class="proyecto">
+            <h3>Proyecto 2</h3>
+            <figure>
+              <img class="imagenweb" src="imagenes/Proyecto2.png" alt="proyecto 2">
+              <figcaption>Imagen obtenida de<a class="vector" href ="https://vectorportal.com/es/vector/dise%C3%B1o-del-sitio-web/31124">vector portal</a></figcaption>
+            </figure>
+            <p>Ejemplo de Proyecto 2:Diseño de página web </p>
         </div>
-        <div class="proyecto">
-           <h3>Proyecto 2</h3>
-           <figure>
-             <img class="imagenweb" src="imagenes/Proyecto2.png" alt="proyecto 2">
-             <figcaption>Imagen obtenida de<a class="vector" href ="https://vectorportal.com/es/vector/dise%C3%B1o-del-sitio-web/31124">vector portal</a></figcaption>
-         </figure>
-           <p>Ejemplo de Proyecto 2:Diseño de página web </p>
         </div>
-      </div>
         <nav class="navegacion">
           <a class="vermas" href="#"> Ver Más --></a>
-        </nav>
+        </nav> 
       </div>
        <!--aside-->
       <aside id="aside">
         <div class="sobremi">
           <h2>Sobre mi</h2>
-          <p>Hola! soy Brianna y me dedico al desarrollo web, específicamente desarrollo Front End. Estaré encantada de ayudarte a realizar tu sitio web. Cuento con amplia experiencia en la creación de páginas web comerciales, de entretenimiento, artes, deportes y ciencias. Me gusta trabajar en conjunto con el/la cliente para alcanzar el objetivo. Siempre dispuesta a afrontar nuevos desafíos.</p>
+          <p>Hola! soy Brianna y me dedico al desarrollo web, específicamente desarrollo Front End. Cuento con amplia experiencia en la creación de páginas web comerciales, de entretenimiento, artes, deportes y ciencias. Me gusta trabajar en conjunto con el/la cliente para alcanzar el objetivo propuesto. Siempre dispuesta a afrontar nuevos desafíos.  Estaré encantada de ayudarte a realizar tu sitio web.</p>
         </div>
         <div class="formacion">
           <h2>Formación</h2>
-          <p>Primeros pasos del desarrollo Front End en:<a class="arg"href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target = "_blank">Argentina Programa</a></p>
-          <p> Curso HTML 5: Capacitando</p>
-          <p> Curso CSS: Capacitando</p>
-          <p> Curso Javascript: Capacitando</p>
-          <p> Curso Bootstrap: Capacitando</p>
+          <ul>
+            <li>Primeros pasos del desarrollo Front End en:<a class="arg"href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target = "_blank">Argentina Programa</a></li>
+            <li> Curso HTML 5: Capacitando</li>
+            <li> Curso CSS: Capacitando</li>
+            <li> Curso Javascript: Capacitando</li>
+            <li> Curso Bootstrap: Capacitando</li>
+        </ul>
         </div>
       </aside>
     </section>
@@ -121,7 +128,6 @@
         <div class="contacto">
          
           <p><i class="fa-regular fa-envelope-open"></i><em>E-mail: brianna.daniels@example.com</em></p>
-       
           <p><i class="fa-brands fa-whatsapp"></i><em>Tel: (289) 549-1162<em></p>  
         </div>     
      </div>
@@ -134,7 +140,7 @@
 for(var i = 0 ; i < ancla.length; i++){ancla[i].classList.toggle ('desaparece');}}
   alert ("Bienvenido/a al sitio web de Brianna Daniels")
  </script>
-  <script src="https://kit.fontawesome.com/bcc30ccabc.js" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/bcc30ccabc.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
